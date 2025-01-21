@@ -1,12 +1,12 @@
 require("dotenv").config();
 import helmet from "helmet";
-import conn from "./config/database";
+import conn from "../config/database";
 import morgen from "morgan";
 import hpp from "hpp";
 import { Request, Response } from "express";
-import AuthRouter from "./Routes/AuthRoute";
-import BlogRouter from "./Routes/BlogRoutes";
-import CommentRouter from "./Routes/CommentRoutes";
+import AuthRouter from "../Routes/AuthRoute";
+import BlogRouter from "../Routes/BlogRoutes";
+import CommentRouter from "../Routes/CommentRoutes";
 const compression = require("compression");
 const express = require("express");
 const http = require("http");
