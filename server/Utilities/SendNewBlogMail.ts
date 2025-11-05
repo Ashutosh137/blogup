@@ -4,7 +4,7 @@ const sendEmail = (recipientEmail: any, blog: any) => {
     service: "gmail",
     auth: {
       user: "mr.luckysharma7@gmail.com",
-      pass: "zazs wute dtvu nodt",
+      pass: process.env.EMAIL_PASSWORD,
     },
   });
 
